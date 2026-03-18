@@ -4,8 +4,7 @@
   font-family: "Exact Block";
   font-style: normal;
   font-display: swap;
-  src: url("https://github.com/JamelHammoud/atlanticconvenienceexpo/raw/refs/heads/main/ExactBlock-Regular.ttf")
-    format("ttf");
+  src: url("https://github.com/JamelHammoud/atlanticconvenienceexpo/raw/refs/heads/main/ExactBlock-Regular.ttf") format("ttf");
 }
 
 body {
@@ -35,6 +34,10 @@ header[scrolled="true"] {
   background-color: white;
   color: black;
   box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+}
+
+header[scrolled="true"] .pl-translation-button {
+  color: black;
 }
 
 header[scrolled="true"] .header-logo {
@@ -75,6 +78,10 @@ header nav a {
   font-size: 16px;
   text-decoration: none;
   transition: 0.2s;
+}
+
+header > div {
+  width: 100%;
 }
 
 /* HERO */
@@ -209,6 +216,7 @@ header nav a {
 }
 
 @media screen and (max-width: 600px) {
+
   #hero .hero-header-content-container .hero-header .hero-location,
   #hero .hero-header-content-container .hero-header .hero-bullet:nth-of-type(2),
   #hero [data-btn="hero-exhibit"] {
@@ -237,20 +245,16 @@ header nav a {
   pointer-events: none;
   user-select: none;
   padding: 30px 0;
-  mask-image: linear-gradient(
-    to right,
-    transparent,
-    black 10%,
-    black 90%,
-    transparent
-  );
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent,
-    black 10%,
-    black 90%,
-    transparent
-  );
+  mask-image: linear-gradient(to right,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent);
+  -webkit-mask-image: linear-gradient(to right,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent);
 }
 
 #hero-sponsor-logos .logo-track {
@@ -270,6 +274,7 @@ header nav a {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(calc(-50% - 30px));
   }

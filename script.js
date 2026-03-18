@@ -5,6 +5,10 @@ function updatePath() {
 }
 
 function checkScroll() {
+  if (window.location.pathname != "/event/EVEKDIRDMFASE/home") {
+    return;
+  }
+
   const scrollTop = window.scrollY;
 
   if (scrollTop >= 5) {
